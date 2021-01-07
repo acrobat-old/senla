@@ -5,7 +5,9 @@ import java.util.Collections;
 import java.util.Scanner;
 
 public class SplitSentence {
+
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         ArrayList<String> collection = new ArrayList<>();
         System.out.println("Enter your sentence:");

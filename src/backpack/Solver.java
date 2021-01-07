@@ -4,10 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Solver {
+
     private int needed;
     private int numberOfItem;
     private List<Item> items;
-    private int table[][];
+    private int[][] table;
     private ArrayList<Item> itemsInBackpack;
     private int maxCost;
 
@@ -24,8 +25,11 @@ public class Solver {
     private int max(int i, int j){
         int a, b;
         a = table[i - 2][j];
-        if(j < items.get(i/2).getWeight()) b = items.get(i/2).getCost();
-        else b = items.get(i/2).getCost() + table[i - 2][j - items.get(i/2).getWeight()];
+        if(j < items.get(i/2).getWeight()) {
+            b = items.get(i/2).getCost();
+        } else {
+            b = items.get(i/2).getCost() + table[i - 2][j - items.get(i/2).getWeight()];
+        }
         if(Math.max(a,b) > a){
             table[i+1][j] = 1;
         }

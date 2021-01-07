@@ -5,7 +5,9 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Palindromes {
+
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         ArrayList<Integer> palindromes = new ArrayList<>();
         try {
@@ -30,7 +32,6 @@ public class Palindromes {
 
     static boolean isPalindrome(int number){
         String string = ""+number;
-
         return string.equals(new StringBuffer(string).reverse().toString());
     }
 }

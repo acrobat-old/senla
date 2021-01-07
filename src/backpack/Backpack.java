@@ -4,8 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Backpack {
+
     public static void main(String[] args) {
-        List<Item> items = new ArrayList<Item>();
+
+        List<Item> items = new ArrayList<>();
         for (int i = 0; i < 6; i++) {
             items.add(new Item());
         }

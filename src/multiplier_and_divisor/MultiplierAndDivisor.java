@@ -4,7 +4,9 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class MultiplierAndDivisor {
+
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         try {
             System.out.println("Enter the first number:");
@@ -24,6 +26,7 @@ public class MultiplierAndDivisor {
     }
 
     static int leastCommonMultiplier(int a, int b){
+
         if(a == 0 || b == 0) return 0;
         int big = Math.max(a, b);
         int low = Math.min(a, b);
